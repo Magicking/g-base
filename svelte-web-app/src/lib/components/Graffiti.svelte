@@ -1,6 +1,7 @@
 <script>
     export let index = 0;
 
+  import { base } from '$app/paths';
     import { defaultEvmStores as evm, contracts } from "svelte-ethers-store";
     import { writable } from 'svelte/store';
     import rgeConf from "$lib/rge.conf.json";
@@ -53,7 +54,7 @@
                 value: FloorPrice,
             }).then((e) => {
                 console.log("Message sent using Provider: ", e);
-                goto("/");
+                goto(base);
             });
         } catch (error) {
             console.error("An error occurred when calling obtainNFT:", error);

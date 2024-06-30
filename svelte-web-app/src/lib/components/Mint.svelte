@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import { locale, translation } from "$lib/stores/i18n";
   import { onDestroy, onMount } from "svelte";
   import {
@@ -209,7 +210,7 @@
           destination
         ).then((e) => {
           console.log("Message sent using Provider: ", e);
-          goto("/");
+          goto(base);
         });
       } catch (error) {
         console.error(
