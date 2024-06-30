@@ -1,5 +1,5 @@
 <script>
-  import { base } from 
+  import { base } from '$app/paths';
   import { range } from "$lib/range.js";
   import { defaultEvmStores as evm, contracts } from "svelte-ethers-store";
 
