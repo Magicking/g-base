@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import { page } from "$app/stores";
   import { onDestroy, onMount } from "svelte";
   import { locale, translation } from "$lib/stores/i18n";
@@ -40,7 +41,7 @@
   <div class="px-10">
     <div class="flex w-full md:flex-row justify-between h-16">
       <div class="flex items-center">
-        <h4 class="text-sm"><a href="/">Graffiti NFT</a></h4>
+        <h4 class="text-sm"><a href="{base}/">Graffiti NFT</a></h4>
       </div>
       <div class="hidden md:flex items-center">
         <div class="ml-10 flex items-center space-x-4">
@@ -48,13 +49,13 @@
             class="rainbowText"
             aria-current={$page.url.pathname === "/" ? "page" : undefined}
           >
-            <a href="/"> {t("Header.Graveyard")} </a>
+            <a href="{base}/"> {t("Header.Graveyard")} </a>
           </p>
           <p
             class="rainbowText"
             aria-current={$page.url.pathname === "/mint" ? "page" : undefined}
           >
-            <a href="/mint">{t("Header.Souldraw")}</a>
+            <a href="{base}/mint">{t("Header.Souldraw")}</a>
           </p>
           <p
             class="rainbowText"
@@ -62,7 +63,7 @@
               ? "page"
               : undefined}
           >
-            <a href="/connect">{t("Header.Wallet")}</a>
+            <a href="{base}/connect">{t("Header.Wallet")}</a>
           </p>
         </div>
       </div>
@@ -96,19 +97,19 @@
         <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <!-- Duplicate Navigation links for mobile -->
           <a
-            href="/"
+            href="{base}/"
             class="block px-3 py-2 rounded-md text-sm text-white hover:bg-gray-700"
           >
             {t("Header.Graveyard")}
           </a>
           <a
-            href="/mint"
+            href="{base}/mint"
             class="block px-3 py-2 rounded-md text-sm text-white hover:bg-gray-700"
           >
             {t("Header.Souldraw")}
           </a>
           <a
-            href="/connect"
+            href="{base}/connect"
             class="block px-3 py-2 rounded-md text-sm text-white hover:bg-gray-700"
           >
             {t("Header.Wallet")}

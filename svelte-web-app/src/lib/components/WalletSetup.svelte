@@ -50,7 +50,7 @@
         id: "8453",
         token: "ETH",
         label: "Base",
-        rpcUrl: "https://base-mainnet.g.alchemy.com/v2/pWpu34JW_JL6Jpy2Bqep0HQAc3xIa4xN",
+        rpcUrl: "https://mainnet.base.org",
       },
     ],
     appMetadata: {
