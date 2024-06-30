@@ -1,0 +1,1 @@
+import{be as o,bf as t,bg as m,bh as g,bi as u,bj as b}from"./WalletSetup.10cdd305.js";function c(){for(var r=[],e=0;e<arguments.length;e++)r[e]=arguments[e];var n=o(r),s=t(r,1/0),a=r;return a.length?a.length===1?g(a[0]):u(s)(b(a,n)):m}export{c as m};
