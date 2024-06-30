@@ -1,4 +1,5 @@
 <script>
+  import { base } from 
   import { range } from "$lib/range.js";
   import { defaultEvmStores as evm, contracts } from "svelte-ethers-store";
 
@@ -24,7 +25,7 @@
           {#if tokenId >= 0 && tokenId < totalSupply && $GraveyardStore1 }
             <div class="px-4 mt-2">
               <p class="text-white text-xl pl-10">ID: {tokenId}</p>
-              <a href="/graffiti/?i={tokenId}"
+              <a href="{base}/graffiti/?i={tokenId}"
                 ><img
                   class="pxl justify-center items-center mx-auto my-4"
                   alt="NFT"
