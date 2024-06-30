@@ -1,0 +1,7 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+viaIR = true
+gas_report = ["*"]
+fs_permissions = [{ access = "read-write", path = "./img"}]
