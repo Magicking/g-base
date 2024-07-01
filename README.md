@@ -5,6 +5,7 @@
 License: Creative Commons
 
 Link: https://6120.eu/posts/graffiti-base/
+
 Usage: https://youtu.be/tZ01D_xwHCk
 
 ## Stacks
